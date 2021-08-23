@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for water my plants page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Build-Week-Water-My-Plants-03/backend.git"
+  },
+  "author": "David Ellis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Build-Week-Water-My-Plants-03/backend/issues"
+  },
+  "homepage": "https://github.com/Build-Week-Water-My-Plants-03/backend#readme"
+}
