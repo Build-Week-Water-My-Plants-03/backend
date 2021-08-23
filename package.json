@@ -15,7 +15,6 @@
     "seedh": "heroku run knex seed:run -a web44-water-my-plants",
     "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand",
     "deploy": "git push heroku main"
-    
   },
   "repository": {
     "type": "git",
@@ -40,8 +39,11 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.24.0",
     "jest": "^27.0.6",
     "nodemon": "^2.0.12",
     "supertest": "^6.1.6"
