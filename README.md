@@ -1,7 +1,7 @@
 Plants API
 A guide to the API for Water My Plants
 
-BASE URL: https://git.heroku.com/web44-water-my-plants.git
+BASE URL: https://web44-water-my-plants.herokuapp.com/
 ENDPOINTS:
 AUTHENTICATION
 [POST] (SIGN-UP) '/api/auth/register' || username, password, and phone_number required. username must be unique
