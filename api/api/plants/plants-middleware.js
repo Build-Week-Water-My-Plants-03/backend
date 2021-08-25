@@ -1,6 +1,6 @@
 const { getPlantsById } = require("./plants-model");
 
-const checkPlantId = async (req, re, next) => {
+const checkPlantId = async (req, res, next) => {
     try {
         const plant = await getPlantsById(req.params.id);
         if (!plant) {
