@@ -1,5 +1,7 @@
 {
     "cSpell.ignoreWords": [
-        "knexfile"
+        "knexfile",
+        "postgres",
+        "postgresql"
     ]
 }
