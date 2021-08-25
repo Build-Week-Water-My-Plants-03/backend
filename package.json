@@ -13,8 +13,8 @@
     "rollbackh": "heroku run knex migrate:rollback -a web44-water-my-plants",
     "databaseh": "heroku pg:psql -a web44-water-my-plants",
     "seedh": "heroku run knex seed:run -a web44-water-my-plants",
-    "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand",
-    "deploy": "git push heroku main"
+    "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand"
+    
   },
   "repository": {
     "type": "git",
