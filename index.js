@@ -1,7 +1,7 @@
 require("dotenv").config();
 
-const path = require("path");
-const express = require("express")
+//const path = require("path");
+//const express = require("express")
 
 const server = require("./api/server");
 
