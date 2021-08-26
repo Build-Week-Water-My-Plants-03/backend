@@ -1,10 +1,11 @@
 const express = require('express')
 const helmet = require('helmet')
 const cors = require('cors')
+
 const db = require('./data/db-config')
-const plantRouter = require("./api/plants/plants-router");
-const authRouter = require("./api/auth/auth-router");
-const userRouter = require("./api/users/users-router");
+// const plantRouter = require("./api/plants/plants-router");
+// const authRouter = require("./api/auth/auth-router");
+// const userRouter = require("./api/users/users-router");
 
 function getAllUsers() { return db('users') }
 function getAllPlants() { return db('plants') }
@@ -43,8 +44,8 @@ server.post('/api/plants', async (req, res) => {
   res.status(201).json(await insertPlants(req.body))
 })
 
-server.use("/api/plants", plantRouter);
-server.use("/api/auth", authRouter);
-server.use("/api/users", userRouter);
+// server.use("/api/plants", plantRouter);
+// server.use("/api/auth", authRouter);
+// server.use("/api/users", userRouter);
 
 module.exports = server
