@@ -3,7 +3,7 @@ const Plants = require("./plants-model");
 const { checkPlantId, checkPlantPayload } = require("./plants-middleware");
 const restricted = require("../restricted");
 
-router.get("/", restricted, (req, res, next) => {
+router.get("/", (req, res, next) => {
     Plants.getPlants()
     .then((plants) => {
         res.status(200).json(plants);

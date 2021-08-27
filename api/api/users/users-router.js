@@ -4,7 +4,19 @@ const Users = require("../auth/auth-model");
 const bcrypt = require("bcryptjs");
 const { checkUserId } = require("./users-middleware");
 
-router.get("/:id", restricted, checkUserId, (req, res) => {
+router.get("/", (req, res) => {
+    console.log("endpoint check")
+    Users.find()
+    .then((user) => {
+        res.status(200).json(user);
+    })
+    .catch(() => {
+        res.status(500).json({ message: "something wrong in the router" });
+    });
+});
+
+
+router.get("/:id", (req, res) => {
     Users.findById(req.params.id)
     .then((user) => {
         res.status(200).json(user);

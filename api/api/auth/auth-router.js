@@ -35,12 +35,11 @@ router.post("/login", checkUsernameExists, (req, res, next) => {
         res.status(400).json({ message: "all fields are required" });
     } else {
         const {username, password } = req.body;
-
         Auth.findByUsername(username)
         .then((user) => {
             if(user && bcrypt.compareSync(password, user[0].password)) {
                 const token = buildToken(user[0]);
-                res.status(200).json({ message: "invalid credentials" });
+                res.status(200).json({ message: "success" });
             }
         })
         .catch(next);
