@@ -18,3 +18,5 @@ PLANTS
 [POST] '/api/plants' || all fields are required except for image. This will return the plant that was just posted.
 [PUT] '/api/plants/:id' || Used to update any plant, all fields are still required besides the image. Returns the updated plant.
 [DELETE] '/api/plants/:id' || Deletes the plant specified and prints back a message that it was successfully deleted.
+
+a
